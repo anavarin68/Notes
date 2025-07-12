@@ -12,7 +12,7 @@
 			<li class="nav-item active"><a class="nav-link" href="#" style="color:black;">Home
 			</a></li>
 
-			<li class="nav-item"><a class="nav-link" href="#" style="color:black;">Add Notes</a>
+			<li class="nav-item"><a class="nav-link" href="addNotes.jsp" style="color:black;">Add Notes</a>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="#" style="color:black;">Show Notes</a>
 			</li>
