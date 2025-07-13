@@ -34,4 +34,30 @@ public class DAO {
 		}
 		return f;
 	}
+
+	public UserDetails loginUser(UserDetails us) {
+		UserDetails user = null;
+
+		try {
+			String query = "select * from user where email=? and password=?";
+			PreparedStatement ps = conn.prepareStatement(query);
+
+			ps.setString(1, us.getemail());
+			ps.setString(2, us.getpassword());
+
+			ResultSet rs = ps.executeQuery();
+
+			if (rs.next()) {
+				user = new UserDetails();
+				user.setId(rs.getInt("id"));
+				user.setName(rs.getString("name"));
+				user.setemail(rs.getString("email"));
+				user.setpassword("password");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
 }
