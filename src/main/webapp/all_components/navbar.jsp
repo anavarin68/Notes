@@ -1,5 +1,5 @@
-
 <%@page import="com.User.UserDetails"%>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
 	<a class="navbar-brand" href="#" style="color: black;">Navbar</a>
 
