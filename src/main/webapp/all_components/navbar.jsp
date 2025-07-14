@@ -1,5 +1,5 @@
-
 <%@page import="com.User.UserDetails"%>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
 	<a class="navbar-brand" href="#" style="color: black;">Navbar</a>
 
@@ -14,7 +14,7 @@
 				href="addNotes.jsp">Add notes</a></li>
 
 			<%
-			UserDetails user = (UserDetails) session.getAttribute("userD");
+			UserDetails user = (UserDetails) session.getAttribute("UserD");
 			if (user != null) {
 				//System.out.println(user.getName());
 			%>
@@ -22,8 +22,8 @@
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
 			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
-				type="submit" href=" login.jsp"><%=user.getName()%></a> <a
-				class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
+				type="submit" href=" login.jsp"><%= user.getName()%></a>
+			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
 				type="submit" href="register.jsp">Logout</a>
 		</form>
 
@@ -31,9 +31,10 @@
 		} else {
 		%>
 		<form class="form-inline my-2 my-lg-0">
-			<a class="btn btn-outline-primary my-2 my-sm-0" type="submit"
-				style="color: black;" href=" login.jsp">Login</a> <a
-				class="btn btn-outline-primary my-2 my-sm-0" type="submit"
+			 <a
+				class="btn btn-outline-success my-2 my-sm-0" type="submit"
+				style="color: black;" href="login.jsp">Login</a> <a
+				class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				style="color: black;" href="register.jsp">Register</a>
 		</form>
 		<%
