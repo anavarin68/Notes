@@ -17,6 +17,19 @@
 					<div class="card-header">
 						<h1>Login</h1>
 					</div>
+					
+					<%
+					String invalidMsg = (String) session.getAttribute("login-failed");
+					if (invalidMsg != null) {
+					%>
+					<div class="alert alert-danger" role="alert">
+						<%=invalidMsg%>
+					</div>
+					<%
+					session.removeAttribute("login-failed");
+					}
+					%>
+
 					<div class="card-body">
 						<form method="post" action="LoginServlet">
 							<div class="form-group">
