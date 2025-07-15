@@ -14,7 +14,7 @@
 				href="addNotes.jsp">Add notes</a></li>
 
 			<%
-			UserDetails user = (UserDetails) session.getAttribute("userD");
+			UserDetails user = (UserDetails) session.getAttribute("UserD");
 			if (user != null) {
 				//System.out.println(user.getName());
 			%>
