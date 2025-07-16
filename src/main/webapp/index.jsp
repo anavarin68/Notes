@@ -23,10 +23,8 @@
 	<div class="container-fluid back-img">
 		<div class="text-center">
 			<h1 class="text-warning">Save Your Notes</h1>
-			<a class="btn bg-dark text-light my-2 my-sm-0 mr-3" href="login.jsp"
-				type="submit">Login</a> <a
-				class="btn bg-dark text-light my-2 my-sm-0 mr-3" href="register.jsp"
-				type="submit">Register</a>
+			<a class="btn bg-dark text-light my-2 my-sm-0 mr-3" href="login.jsp" type="submit">Login</a>
+			<a class="btn bg-dark text-light my-2 my-sm-0 mr-3" href="register.jsp" type="submit">Register</a>
 		</div>
 	</div>
 	<%@ include file="all_components/footer.jsp"%>

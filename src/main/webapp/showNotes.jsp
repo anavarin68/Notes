@@ -7,7 +7,6 @@ if (user1 == null) {
 }
 %>
 
-
 <%@ include file="all_components/allcss.jsp"%>
 <title>Show Notes</title>
 <%@ include file="all_components/navbar.jsp"%>

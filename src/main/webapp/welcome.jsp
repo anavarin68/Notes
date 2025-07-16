@@ -29,8 +29,6 @@ if (user1 == null) {
 		</div>
 	</div>
 	<%@ include file="all_components/footer.jsp"%>
-
-
 </body>
 </html>
 
