@@ -9,9 +9,10 @@
 			<li class="nav-item active"><a class="nav-link"
 				style="color: black;" href="index.jsp">Home </a></li>
 			<li class="nav-item"><a class="nav-link" style="color: black;"
-				href="#">Show notes</a></li>
-			<li class="nav-item"><a class="nav-link" style="color: black;"
 				href="addNotes.jsp">Add notes</a></li>
+			<li class="nav-item"><a class="nav-link" style="color: black;"
+				href="showNotes.jsp">Show notes</a></li>
+
 
 			<%
 			UserDetails user = (UserDetails) session.getAttribute("UserD");
@@ -22,8 +23,8 @@
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
 			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
-				type="submit" href=" login.jsp"><%= user.getName()%></a>
-			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
+				type="submit" href=" login.jsp"><%=user.getName()%></a> <a
+				class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
 				type="submit" href="LogoutServlet">Logout</a>
 		</form>
 
@@ -31,8 +32,7 @@
 		} else {
 		%>
 		<form class="form-inline my-2 my-lg-0">
-			 <a
-				class="btn btn-outline-success my-2 my-sm-0" type="submit"
+			<a class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				style="color: black;" href="login.jsp">Login</a> <a
 				class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				style="color: black;" href="register.jsp">Register</a>
