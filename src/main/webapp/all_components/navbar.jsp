@@ -24,7 +24,7 @@
 			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
 				type="submit" href=" login.jsp"><%= user.getName()%></a>
 			<a class="btn btn-outline-primary my-2 my-sm-0" style="color: black;"
-				type="submit" href="register.jsp">Logout</a>
+				type="submit" href="LogoutServlet">Logout</a>
 		</form>
 
 		<%
