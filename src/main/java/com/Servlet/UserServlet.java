@@ -26,8 +26,8 @@ public class UserServlet extends HttpServlet {
 		
 		UserDetails us=new UserDetails();
 		us.setName(name);
-		us.setemail(email);
-		us.setpassword(password);
+		us.setEmail(email);
+		us.setPassword(password);
 		
 		DAO dao=new DAO(DBConnect.getConn());
 		
