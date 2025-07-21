@@ -37,11 +37,11 @@ public class UserServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		if(f)
 		{
-			out.print("Registered Sucessfully....!");
+			response.sendRedirect("login.jsp?msg=Registered+successfully");
 		}
 		else
 		{
-			out.print("Not Registrered..!");
+			response.sendRedirect("register.jsp?msg=Not+Registered");
 		}
 	}
 
