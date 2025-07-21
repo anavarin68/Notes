@@ -44,6 +44,20 @@
 					}
 					%>
 
+					<!-- Code Start for Successful Logout -->
+					<%
+					String logoutSuccess = (String) session.getAttribute("logout-success");
+					if (logoutSuccess != null) {
+					%>
+					<div class="alert alert-success" role="alert">
+						<%=logoutSuccess%>
+					</div>
+					<%
+					session.removeAttribute("logout-success");
+					}
+					%>
+
+
 					<div class="card-body">
 						<form method="post" action="LoginServlet">
 							<div class="form-group">
