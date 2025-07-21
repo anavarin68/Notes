@@ -25,9 +25,11 @@ public class AddNotes extends HttpServlet {
 		boolean f = dao.AddNotes(title, content, uid);
 
 		if (f) {
-			System.out.println("Post Data Inserted");
+			System.out.println("Data Added Successfully");
+			response.sendRedirect("showNotes.jsp");
 		} else {
 			System.out.println("Post Data Not Inserted");
+			response.sendRedirect("addNotes.jsp");
 		}
 	}
 
