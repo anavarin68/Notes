@@ -39,8 +39,8 @@ if (user1 == null) {
 					<p><b>Upload Date: <%= po.getPdate() %></b></p>
 				</div>
 				<div class="">
-					<a href="#">Delete</a>
-					<a href="#">Edit</a>
+					<a href="DeleteServlet?note_id=<%=po.getId()%>">Delete</a>
+					<a href="edit.jsp?note_id=<%=po.getId()%>">Edit</a>
 				</div>
 
 			</div>
