@@ -24,7 +24,7 @@ public class EditServlet extends HttpServlet {
 		boolean f = dao.UpdateNotes(uid, title, content);
 
 		if (f) {
-			System.out.println("Data Updates");
+			System.out.println("Data Updated Successfully");
 			response.sendRedirect("showNotes.jsp");
 		} else {
 			System.out.println("Data not updated!!");
